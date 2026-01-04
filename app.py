@@ -4,6 +4,14 @@ st.set_page_config(page_title="Python Portfolio", page_icon="🐍", layout="cent
 
 st.title("👨‍💻 Parath S")
 st.subheader("Python Developer | Student")
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.write("""
 I build Python projects using **Tkinter, MySQL, and Flask**.
@@ -36,3 +44,4 @@ st.divider()
 st.header("📞 Contact")
 st.write("Email: yourmail@gmail.com")
 st.write("GitHub: https://github.com/yourusername")
+
