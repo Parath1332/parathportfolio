@@ -1,47 +1,49 @@
 import streamlit as st
 
-st.set_page_config(page_title="Python Portfolio", page_icon="🐍", layout="centered")
+st.set_page_config(
+    page_title="Parath | Portfolio",
+    page_icon="👨‍💻",
+    layout="centered"
+)
 
-st.title("👨‍💻 Parath S")
-st.subheader("Python Developer | Student")
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# Hide Streamlit UI (best possible)
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
+# ---------- PORTFOLIO CONTENT ----------
+st.title("👋 Hi, I'm Parath")
+
+st.subheader("Python Developer | Student | Projects")
 
 st.write("""
-I build Python projects using **Tkinter, MySQL, and Flask**.
-This portfolio showcases my live Python projects.
+Welcome to my portfolio website.
+
+I build Python projects using:
+- Streamlit
+- Tkinter
+- MySQL
+- Flask
 """)
 
-st.divider()
+st.markdown("---")
 
-st.header("📂 Projects")
+st.subheader("🚀 Projects")
 
-with st.expander("🎮 Tic Tac Toe Game"):
-    st.write("A simple Python game")
-    st.button("Run Game")
+st.markdown("""
+- 🏫 **School Management System**  
+- 🏦 **Bank Management System**  
+- 🧠 **Flashcard Learning App**  
+- 📊 **Python Data Projects**
+""")
 
-with st.expander("🏦 Bank Management System"):
-    st.write("Account creation, deposit, withdraw, transfer")
-    st.button("View Project")
+st.markdown("---")
 
-with st.expander("🔐 Login System"):
-    st.write("Login, register, forgot password using MySQL")
-    st.button("View Demo")
+st.subheader("📬 Contact")
 
-st.divider()
-
-st.header("📄 Resume")
-st.write("Coming soon")
-
-st.divider()
-
-st.header("📞 Contact")
-st.write("Email: yourmail@gmail.com")
-st.write("GitHub: https://github.com/yourusername")
-
+st.write("📧 Email: parath101112@gmail.com")  
+st.write("🐙 GitHub: https://github.com/Parath1332")
