@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Parath | Portfolio</title>
-
-  <script>
-    window.location.replace(
-      "https://parath.streamlit.app"
-    );
-  </script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to my portfolio…</p>
+  <iframe
+    src="https:parath.streamlit.app"
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
